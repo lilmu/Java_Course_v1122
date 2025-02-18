@@ -12,17 +12,8 @@ public class Lab01 {
 
 		Display.openWorld("../maps/school.map");
 		Robot lisa = new Robot();
-      Robot pete = new Robot();
+      Robot pete = new Robot(4, 5, Display.SOUTH, 0);
       
-      karel.move();
-      karel.pickBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.move();
-      karel.putBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.turnLeft();
 	}
 
 }
