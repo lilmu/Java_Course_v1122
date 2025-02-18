@@ -45,6 +45,43 @@ public class Lab01 {
       lisa.move();
       lisa.putBeeper();
       
+      pete.pickBeeper();
+      pete.move();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.turnLeft();
+      pete.turnLeft();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.turnLeft();
+      pete.move();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.turnLeft();
+      pete.turnLeft();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.turnLeft();
+      pete.move();
+      pete.move();
+      pete.putBeeper();
+      pete.turnLeft();
+      pete.turnLeft();
+      pete.move();
+      
+     
+
+      
+      
+      
+      
 	}
 
 }
