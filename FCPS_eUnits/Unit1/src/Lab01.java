@@ -14,6 +14,37 @@ public class Lab01 {
 		Robot lisa = new Robot();
       Robot pete = new Robot(4, 5, Display.SOUTH, 0);
       
+      lisa.move();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.pickBeeper();
+      lisa.turnLeft();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.turnLeft();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.move();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.move();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.move();
+      lisa.turnLeft();
+      lisa.turnLeft();
+      lisa.turnLeft();
+      lisa.move();
+      lisa.putBeeper();
+      
 	}
 
 }
