@@ -7,11 +7,11 @@ public class Lab01 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Display.openWorld("../maps/school.map");
-		Robot lisa = new Robot();
+   public static void main(String[] args) {
+   	// TODO Auto-generated method stub
+   
+      Display.openWorld("../maps/school.map");
+      Robot lisa = new Robot();
       Robot pete = new Robot(4, 5, Display.SOUTH, 0);
       
       lisa.move();
@@ -76,12 +76,6 @@ public class Lab01 {
       pete.turnLeft();
       pete.move();
       
-     
-
-      
-      
-      
-      
-	}
+   }
 
 }
