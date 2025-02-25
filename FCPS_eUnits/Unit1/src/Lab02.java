@@ -53,9 +53,6 @@ public class Lab02 {
       myGuy.move();
       myGuy.putBeeper();
       myGuy.move();
-
-      
-      
 	}
 
 }
