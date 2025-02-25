@@ -32,7 +32,7 @@ public class Climber extends Athlete{
       move();
       turnRight();
       move();
-      trunLeft(); 
+      turnLeft(); 
    }
    
    public void ClimbDownRight()
