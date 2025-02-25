@@ -10,18 +10,52 @@ public class Lab02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Display.openWorld("../maps/first.map");
-		Robot karel = new Robot();
+		Display.openWorld("../maps/maze.map");
+      Display.setSize(8, 8);
+		Athlete myGuy = new Athlete();
       
-      karel.move();
-      karel.pickBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.move();
-      karel.putBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.turnLeft();
+      myGuy.putBeeper();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnRight();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnRight();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnLeft();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnLeft();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnRight();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnRight();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnLeft();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnLeft();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.turnRight();
+      myGuy.move();
+      myGuy.putBeeper();
+      myGuy.move();
+
+      
+      
 	}
 
 }
