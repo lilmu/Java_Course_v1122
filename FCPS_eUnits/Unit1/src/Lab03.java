@@ -17,18 +17,18 @@ public class Lab03 {
       myGuy.move();
       
       for(int i=0;i<3;i++){
-         myGuy.ClimbUpRight();
+         myGuy.climbUpRight();
       }
       for(int i=0;i<2;i++){
-         myGuy.ClimbDownRight();
+         myGuy.climbDownRight();
       }
       myGuy.pickBeeper();
       myGuy.turnAround();
       for(int i=0;i<2;i++){
-         myGuy.ClimbUpLeft();
+         myGuy.climbUpLeft();
       }
       for(int i=0;i<3;i++){
-         myGuy.ClimbDownLeft();
+         myGuy.climbDownLeft();
       }
       myGuy.move();
       myGuy.turnRight();
