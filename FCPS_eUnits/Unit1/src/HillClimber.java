@@ -35,7 +35,7 @@ public class HillClimber extends Climber{
       move();
    }
    
-   public void ClimbDownLeft()
+   public void climbDownLeft()
    {  
       move();
       move();

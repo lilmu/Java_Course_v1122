@@ -10,7 +10,7 @@ public class Climber extends Athlete{
    
    public Climber(int x)
    {
-   super (x, 1, Display.NORTH, 0);
+   super (x, 1, Display.NORTH, 1);
    }
    
    public void climbUpRight()
