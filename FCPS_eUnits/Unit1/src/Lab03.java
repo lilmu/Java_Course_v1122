@@ -13,11 +13,25 @@ public class Lab03 {
       Display.setSize(16, 16);
 		Climber myGuy = new Climber(8);
       
-      myGuy.ClimbUpRight();
-      myGuy.ClimbDownRight();
+      myGuy.turnRight();
+      myGuy.move();
+      
+      for(int i=0;i<3;i++){
+         myGuy.ClimbUpRight();
+      }
+      for(int i=0;i<2;i++){
+         myGuy.ClimbDownRight();
+      }
       myGuy.pickBeeper();
-      myGuy.ClimbUpLeft();
-      myGuy.ClimbDownLeft();
+      myGuy.turnAround();
+      for(int i=0;i<2;i++){
+         myGuy.ClimbUpLeft();
+      }
+      for(int i=0;i<3;i++){
+         myGuy.ClimbDownLeft();
+      }
+      myGuy.move();
+      myGuy.turnRight();
    }
 
 }

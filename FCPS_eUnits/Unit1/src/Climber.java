@@ -10,80 +10,42 @@ public class Climber extends Athlete{
    
    public Climber(int x)
    {
-   super (x, 1, Display.NORTH, 1);
+   super (x, 1, Display.NORTH, 0);
    }
    
    public void ClimbUpRight()
    {
-      turnRight();
-      move();
       turnLeft();
       move();
       move();
-      turnRight();
+      turnRight(); 
       move();
-      turnLeft();
-      move();
-      move();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      move();
-      turnRight();
-      move();
-      turnLeft(); 
    }
    
    public void ClimbDownRight()
    {  
-      turnRight();
       move();
       turnRight();
       move();
       move();
       turnLeft();
-      move();
-      turnRight();
-      move();
-      move();
-      turnAround(); 
    }
    
    public void ClimbUpLeft()
    {  
-      move();
-      move();
-      turnLeft();
-      move();
       turnRight();
       move();
       move();
       turnLeft();
       move();
-      turnRight(); 
    }
    
    public void ClimbDownLeft()
    {  
-      turnLeft();
       move();
       turnLeft();
       move();
-      move();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      move();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      move();
-      turnRight();
       move();
       turnRight();
    }
-
 }
