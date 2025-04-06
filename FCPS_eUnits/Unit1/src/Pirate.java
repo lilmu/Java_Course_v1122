@@ -6,18 +6,40 @@
    {
        public Pirate()
       {
-        
+        super(1,1,Display.EAST,0);
       }
        public void approachPile()
       {
-        
+        while(!nextToABeeper()){
+           move();
+        }
       }
        public int numOfBeepersInPile()
       {
-        
+         int num = 0;
+         while(nextToABeeper()){
+            pickBeeper();
+            num+=1;
+         }
+         return num; 
       }
        public void turnAppropriately(int beepers)
       {
-      
+         switch(beepers){
+            case 1 :
+               turnLeft();
+               move();
+               break;
+            case 2 :
+               turnAround();
+               move();
+               break;
+            case 3 :
+               turnRight();
+               move();
+               break;
+            default :
+               break;
+          }
       }
    }
