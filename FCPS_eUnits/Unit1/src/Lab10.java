@@ -1,0 +1,56 @@
+  	//Torbert, e-mail: smtorbert@fcps.edu
+	//version 4.16.2003
+   
+   import edu.fcps.karel2.Display;
+   import javax.swing.JOptionPane;
+   import java.lang.Math;
+    public class Lab10
+   {
+       public static void followWallsRight(Athlete arg)
+      {  
+         while(!(arg.nextToABeeper())){
+            if(arg.rightIsClear()){
+               arg.turnRight();
+               arg.move();
+            }
+            else if(arg.frontIsClear()){
+               arg.move();
+            }
+            else{
+               arg.turnLeft();
+            }
+         }
+       }
+       public static void followWallsLeft(Athlete arg)
+      {  
+         while(!arg.nextToABeeper()){
+            if(arg.leftIsClear()){
+               arg.turnLeft();
+               arg.move();
+            }
+            else if(arg.frontIsClear()){
+               arg.move();
+            }
+            else{
+               arg.turnRight();
+            }
+         }
+       }
+       public static void main(String[] args) 
+      {
+         String filename = JOptionPane.showInputDialog("Which Maze?");
+         
+         Display.openWorld("../maps/"+filename+".map");
+         Display.setSize(10, 10);
+         Display.setSpeed(10);
+         
+         int d;
+         d = (int)(Math.random()*2);
+         if(d == 0){
+            followWallsLeft(new Athlete());
+         }
+         else {
+            followWallsRight(new Athlete());
+         }
+       }
+   }

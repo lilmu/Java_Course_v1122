@@ -4,7 +4,7 @@
     public class Lab14
    {
        public static void main(String[] args)
-      {
+      {  
          Swimmer weismuller = new Swimmer(2);
          Swimmer fraser = new Swimmer(4);
          Swimmer spitz = new Swimmer(6);

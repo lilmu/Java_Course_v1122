@@ -11,16 +11,33 @@
       {
          super(2, 2, Display.EAST, Display.INFINITY);
       }
-      public void workCorner()
-      {
+      public void workCorner(){
+         if(!nextToABeeper()){
+            putBeeper();
+         }
       }
-      public void moveOneBlock()
-      {
+      public void moveOneBlock(){
+         move();
       }
       public void turnToTheRight()
       {
+         turnLeft();
+         turnLeft();
+         turnLeft();
       }
       public void turnToTheNorth()
       {
+         if(facingEast()){
+            turnLeft();
+         }
+         else if(facingWest()){
+            turnLeft();
+            turnLeft();
+            turnLeft();
+         }
+         else if(facingSouth()){
+            turnLeft();
+            turnLeft();
+         }       
       }
    }
