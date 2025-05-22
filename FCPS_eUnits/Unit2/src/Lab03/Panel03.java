@@ -18,7 +18,9 @@
          for(int k = 0; k <= 50; k++)
          {
             buffer.drawLine(N * k / 50, 0, N, N * k / 50);
-         
+            buffer.drawLine(N,N * k / 50, N-(N * k / 50),N);
+            buffer.drawLine(N-(N * k / 50), N, 0, N-(N * k / 50));
+            buffer.drawLine(0,N-(N * k / 50),N * k / 50,0);
             /************************/
          	/*                      */
          	/* Your code goes here. */
